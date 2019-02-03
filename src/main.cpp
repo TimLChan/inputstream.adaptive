@@ -2714,12 +2714,12 @@ bool CInputStreamAdaptive::Open(INPUTSTREAM& props)
     }
     else if (strcmp(props.m_ListItemProperties[i].m_strKey, "inputstream.adaptive.license_key") == 0)
     {
-      kodi::Log(ADDON_LOG_DEBUG, "found inputstream.adaptive.license_key: [not shown]");
+      kodi::Log(ADDON_LOG_DEBUG, "found inputstream.adaptive.license_key: %s", props.m_ListItemProperties[i].m_strValue);
       lk = props.m_ListItemProperties[i].m_strValue;
     }
     else if (strcmp(props.m_ListItemProperties[i].m_strKey, "inputstream.adaptive.license_data") == 0)
     {
-      kodi::Log(ADDON_LOG_DEBUG, "found inputstream.adaptive.license_data: [not shown]");
+      kodi::Log(ADDON_LOG_DEBUG, "found inputstream.adaptive.license_data: %s", props.m_ListItemProperties[i].m_strValue );
       ld = props.m_ListItemProperties[i].m_strValue;
     }
     else if (strcmp(props.m_ListItemProperties[i].m_strKey, "inputstream.adaptive.license_flags") == 0)
